@@ -1,0 +1,79 @@
+a 2 of 1uF: 	C10, C11
+2 of 10u: 	C100, C101
+a 1 of 220P: 	C14
+a 5 of 100n: 	C2, C13, C15, C102, C103
+1 of 470n: 	C3
+a 1 of 2N2: 	C4
+a 1 of 10uF: 	C5
+a 4 of 10n: 	C6, C7, C8, C9
+4 of 1N4148_-3: 	D1, D2, D3, D4
+
+3 of 100K: 	[TRIM] GAIN, NULL, OFFSET, 
+1 of 47ka: 	DECAY
+5 of 100K BEND, DEPTH, IMPACT, PITCH, RATE
+1 of 22k: 	TONE
+
+a 4 of LM1458N: 	IC1, IC2, IC3, IC7
+a 1 of LM301H: 	IC11
+3 of CA3046: 	IC4, IC5, IC6
+1 of CA3080LMN: 	IC8
+
+*2 of FB_110: 	L1, L2
+
+ORIGINALLY
+	R64: 5.6K
+	R65: 3.3K
+
+7 of 100K: R16, R30, R33, R74, R75, R100*, R102
+1 of 68R: 	R*
+*4 of 390K: 	R11, R14, R55, R69
+*3 of 270K: 	R12, R13, R22
+*3 of 3K3: 	R18, R41, R104
+*5 of 56K: 	R21, R32, R38, R48, R49
+4 of 68K: 	R24, R28, R106, R107
+7 of 470R: 	R25, R44, R45, R46, R67, R71, R73
+*2 of 820R: 	R34, R39
+*2 of 22K: 	R35, R56
+*7 of 1K: 	R36, R37, R40, R42, R57, R64, R65
+*1 of 1K8: 	R43
+1 of 3K9: 	R47 [jesse stuffed]
+*6 of 150K: 	R5, R6, R8, R23, R27, R29
+*6 of 10K: 	R50, R51, R60, R61, R68, R100
+*1 of 2M7: 	R52
+*1 of 820K: 	R53
+*2 of 33K: 	R70, R105
+*1 of 10M: 	R76
+*3 of 1M: 	R9, R10, R62
+
+1 of shape: 	S1
+1 of speed: 	S2
+1 of on/off: 	S3
+a 2 of BC557B: 	T2, T7
+a 3 of 2N5172: 	T3, T6, T8
+a 2 of 2N5459: 	T4, T5  [pull off old board]
+1 of 057-010-1: 	X1
+
+trimmer holes are too small and only support pins on a line
+pads on some of the 8 pin ics are small
+r32, r27 labels ambigious
+r43 label illegible
+
+need:
+68R
+68k
+470R
+3.9K
+8 pin sockets
+better trimmers: 72-T93YA-100K 
+470nF cap [0.47u]
+
+c2, t2 label could be better
+c100 and c101 have weird package on board [and should be labeled uF]
+Original values for R64 and 65 [add stars?]
+R100* is starred because it is fixed at 100K but was part of the run generator before
+Actually, there is an R100 and R100*
+D7 via is SO close!
+S3 and S2 should only have 2 pads
+trimmers should be 1 turn..
+
+Alex stuffed 47KA pot with 50K linear
